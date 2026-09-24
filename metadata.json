@@ -1,0 +1,6 @@
+{
+  "name": "Akaber Real Estate",
+  "description": "akmalik — Buying & Selling Pharmacies without the headache. Seamless pharmacy brokerage, valuation, and advisory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

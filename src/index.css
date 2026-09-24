@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Poppins', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FFFDF7;
+    color: #1E1E1E;
+    overflow-x: hidden;
+  }
+}
+
+:root {
+  --color-primary: #09543D;
+  --color-dark: #04261C;
+  --color-cream: #FFFDF7;
+  --color-tertiary: #461E10;
+  --color-pink: #FFA9E9;
+  --color-mint: #E6F5EF;
+}
+
+@keyframes bounceSlight {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes bound {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.96); }
+  80% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentle 6s ease-in-out 1.5s infinite;
+}
+
+.btn-bounce:hover {
+  animation: bound 0.7s cubic-bezier(0.17, 0.67, 0.3, 1.33);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #09543D33;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #09543D66;
+}
+
